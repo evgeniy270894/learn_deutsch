@@ -19,6 +19,12 @@ export default new Router({
             component: () => import('@/views/Books.vue')
         },
         {
+            path: '/books/:id',
+            name: 'book',
+            props: true,
+            component: () => import('@/views/Book.vue')
+        },
+        {
             path: '/words',
             name: 'words',
             component: () => import('@/views/Words.vue')
